@@ -1,0 +1,160 @@
+//
+// Page Contents
+// ----------------------------
+
+.menu-top {
+    padding: 5px 0;
+    text-align: center;
+
+    img { margin-left: 15px; margin-right: 15px; }
+    a { color: white; font-size: 18px; }
+}
+
+.btn-book {
+    padding: 0;
+    font-size: 26px;
+    font-weight: 300;
+    width: 160px;
+}
+
+.box-content-page {
+    width: 100%;
+    max-width: 528px;
+    height: 167px;
+    margin-left: -264px;
+    margin-top: -84px;
+
+    .media-header {
+        text-align: center;
+    }
+    .body {
+        font-size: 43px;
+        color: #fff;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    @media (min-width: @screen-lg-min) { position: absolute; top: 35%; left: 50%; }
+    @media (min-width: @screen-sm-min) and (max-width: @screen-md-max)  { margin: 45px auto; }
+}
+
+.box-content-page {
+    .body {
+        p { line-height: 0.8em; }
+    }
+}
+
+.page-content {
+    .page-title.text-middle {
+        width: 100%;
+        left: 0;
+        text-align: center;
+        color: white;
+
+        @media (min-width: 1025px) and (max-width: 1380px) { position: absolute; top: 18%; }
+        @media (min-width: 1381px) { position: absolute; top: 30%; }
+    }
+
+    //
+    // Page Rooms
+    // ----------------------------
+    .page-room {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        .page-title h1 {
+            color: #fff;
+            font-size: 36px;
+            text-align: center;
+            font-weight: 300;
+            line-height: 1em;
+        }
+
+        .list-rooms {
+            padding-left: 10px; padding-right: 0;
+
+            .header { text-align: center;
+
+                h2 {
+                    font-size: 22px;
+                    color: #999;
+                    margin-top: 15px;
+                    margin-bottom: 0;
+                    line-height: 20px;
+
+                    a { color: #999; &:hover { color: fadeout(#999, 30%) } }
+                }
+                .option {
+                    font-weight: 300;
+                    font-size: 20px;
+                    border-bottom: 1px dashed #ccc;
+                    border-width: thin;
+                    width: 60%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 3px;
+                }
+                p {
+                    color: #3A758F;
+                    font-weight: bold;
+                }
+            }
+
+            .thumbnail {
+                padding: 0;
+                margin-bottom: 10px;
+
+                .caption {
+                    font-size: 12px;
+                }
+                .caption.restaurant {
+                    height: 125px;
+                }
+            }
+
+            &:first-child { margin-left: -10px; }
+        }
+
+        .box-room-discount {
+            background-color: #699DB2;
+        }
+
+        .box-promote.room-box-promote {
+            height: 322px;
+            margin-top: 1px;
+            text-align: center;
+
+            .text-middle {
+                position: relative;
+                top: 50%;
+                margin-top: -112px;
+
+                .btn-warning {
+                    padding: 0;
+                    font-size: 26px;
+                    font-weight: 300;
+                    width: 160px;
+                    margin-top: 25px;
+                }
+            }
+
+            p { font-size: 24px; }
+        }
+        
+        .content-room {
+            width: 100%;
+            max-width: 980px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 10px;
+
+            .price-from {
+                color: #3A758F;
+                font-weight: 700;
+            }
+        }
+    }
+}
